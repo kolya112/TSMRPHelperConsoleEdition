@@ -66,6 +66,19 @@
                 Console.WriteLine("[Лаунчер] OK");
                 MainProgram();
             }
+
+            else if (action == "группаТП")
+            {
+                ClipBoard.SetText("Здравствуйте, обратитесь в это сообщество: https://vk.com/matrp_help");
+                Console.WriteLine("[группаТП] OK");
+                MainProgram();
+            }
+
+            else
+            {
+                Console.WriteLine("Unkown command");
+                MainProgram();
+            }
         }
     }
 }
