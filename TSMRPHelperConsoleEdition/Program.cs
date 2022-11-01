@@ -1,4 +1,4 @@
-﻿namespace TechnicalSupportMRPHelper
+﻿namespace TSMRPHelperConsoleEdition
 {
     internal class Program
     {
@@ -10,9 +10,8 @@
             MainProgram();
         }
 
-        static void MainProgram()
+        public static void MainProgram()
         {
-
             string? action = Console.ReadLine();
 
             if (action == "+")
@@ -78,6 +77,21 @@
             {
                 Console.WriteLine("Unkown command");
                 MainProgram();
+            }
+        }
+
+        public static void KeysHandler()
+        {
+            while (true)
+            {
+                if (Console.ReadKey().Key == ConsoleKey.NumPad1)
+                {
+                    count++;
+                    Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                    Console.WriteLine("[Key+] OK");
+                    Console.WriteLine("[All Answers Count] " + count);
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
             }
         }
     }

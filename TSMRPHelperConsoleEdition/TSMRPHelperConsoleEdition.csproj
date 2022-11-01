@@ -6,6 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Authors>kolya112</Authors>
+    <Description>Консольная программа для помощи техническим администраторам при работе в ТП на Матрешка РП</Description>
   </PropertyGroup>
 
 </Project>
